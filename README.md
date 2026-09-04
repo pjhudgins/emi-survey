@@ -1,9 +1,9 @@
 # Convergent Properties of Evolving Multiagent Institutions
-Draft - Version 0.3
+Draft - Version 0.4
 
 ## Overview
 
-Mid-2026 has seen a sudden emergence of long-running evolving multi-agent systems that compound evolution mechanisms over a growth trajectory. Under extended self-modification, this resembles institutional learning. Such systems are defined by a growing body of institutional knowledge and doctrine that can survive replacement of elements of the implementing substrate. This survey defines the pattern as Evolving Multiagent Institutions, to distinguish it from bounded evolving agent systems. Fifteen analyzed examples have shown a convergent maturation process, developing differing solutions to similar challenges. A scan of 15,072 GitHub repositories has revealed over 100 candidates that have not yet been analyzed. This survey introduces EMI Index v3.1 to measure the growth of these systems over time based on their records. This index is only valid for measuring a single institution's growth over time. It is not a valid basis for comparison of different institutions' capabilities or quality.
+By mid-2026, a growing set of long-running AI systems was combining persistent memory, multi-agent collaboration, and self-modification. These systems use accumulated experience to revise their operating rules, build new tools, and, in some cases, rewrite the harnesses they run on. Improvements can compound when lessons from earlier work change how the system develops, evaluates, and adopts later improvements. Over an extended trajectory, this resembles institutional learning: knowledge and doctrine accumulate outside model weights and carry forward as agent sessions end, models change, and infrastructure is replaced. This survey defines the pattern as Evolving Multiagent Institutions, distinguishing it from evolution bounded to a particular task or optimization loop. Fifteen analyzed examples have shown a convergent maturation process, independently developing solutions to recurring problems over weeks or months. A scan of 15,072 GitHub repositories has revealed over 100 additional candidates that have not yet been analyzed. This survey introduces the EMI Index to measure institutional growth from surviving records. The index is only valid for measuring a single institution’s growth over time; it is not a valid basis for comparing different institutions’ capabilities or quality.
 
 ![EMI growth trajectories](attachments/emi_growth_linear_20260903-1957_chart.png)
 
@@ -23,6 +23,8 @@ This paradigm could be described with many names. This survey uses Evolving Mult
 7. Self-stabilization: System has recovered from failures, and failure experience is used to make the institution more stable under self-modification.
 
 The field of self-evolving agents is well-described by Zhou and colleagues' recent survey (https://arxiv.org/pdf/2608.03392). The survey describes persistent adaptation from experience across frameworks, memory, skills and tools, models, workflows, and environments. EMIs are also self-evolving agent systems, but the pattern proposed here concerns the enduring institution that can acquire, combine, and refine any of these forms of evolution. Its accumulated doctrine and experience guide open-ended growth and self-stabilization, preserving institutional identity as agents, capabilities, and the underlying substrate change.
+
+Chao Fei and colleagues anticipated institutional structure in "When Agents Evolve, Institutions Follow" https://arxiv.org/abs/2604.27691. This survey aims to characterize them in the wild.
 
 ## State of the Field
 
