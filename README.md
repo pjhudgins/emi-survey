@@ -1,17 +1,14 @@
 # Convergent Properties of Evolving Multiagent Institutions
+Draft - Version 0.3
 
-Draft - Version 0.2
+## Overview
 
-## Intro
+Mid-2026 has seen a sudden emergence of long-running evolving multi-agent systems that compound evolution mechanisms over a growth trajectory. Under extended self-modification, this resembles institutional learning. Such systems are defined by a growing body of institutional knowledge and doctrine that can survive replacement of elements of the implementing substrate. This survey defines the pattern as Evolving Multiagent Institutions, to distinguish it from bounded evolving agent systems. Fifteen analyzed examples have shown a convergent maturation process, developing differing solutions to similar challenges. A scan of 15,072 GitHub repositories has revealed over 100 candidates that have not yet been analyzed. This survey introduces EMI Index v3.1 to measure the growth of these systems over time based on their records. This index is only valid for measuring a single institution's growth over time. It is not a valid basis for comparison of different institutions' capabilities or quality.
 
-Mid-2026 has seen a sudden emergence of long-running evolving multi-agent systems that compound evolution mechanisms over a growth trajectory.
-Under extended self-modification, this resembles institutional learning. The system is defined by a growing body of institutional knowledge and doctrine that can survive replacement of any element of the implementing substrate.
-This survey defines the pattern as Evolving Multiagent Institutions, to distinguish it from bounded evolving agent systems.
-Fifteen analyzed examples have shown a convergent maturation process.
-These systems tend to independently develop solutions to the same set of problems over a period of weeks or months.
-A scan of 15,072 GitHub repositories has revealed over 100 candidates that have not yet been analyzed.
-This survey introduces EMI Index v1.0 to measure the growth of these systems based on their records.
-This index is only valid for measuring a single institution's growth over time. It is not a valid basis for comparison of different institutions' capabilities or quality.
+![EMI growth trajectories](attachments/emi_growth_linear_20260903-1957_chart.png)
+
+*Figure 1. EMI growth trajectories reconstructed from repository records.*
+
 
 ## Paradigm Definition
 
@@ -25,7 +22,7 @@ This paradigm could be described with many names. This survey uses Evolving Mult
 6. Human contribution adds value: The strongest institutions optimize to maximize value of human contribution to growth or task performance. Exclusion of humans is not a strength.
 7. Self-stabilization: System has recovered from failures, and failure experience is used to make the institution more stable under self-modification.
 
-The field of self-evolving agents is well-described by Zhou and colleagues' recent survey (https://arxiv.org/pdf/2608.03392). These describe persistent adaptation from experience across frameworks, memory, skills and tools, models, workflows, and environments. EMIs are also self-evolving agent systems, but the pattern proposed here concerns the enduring institution that can acquire, combine, and refine any of these forms of evolution. Its accumulated doctrine and experience guide open-ended growth and self-stabilization, preserving institutional identity as agents, capabilities, and the underlying substrate change.
+The field of self-evolving agents is well-described by Zhou and colleagues' recent survey (https://arxiv.org/pdf/2608.03392). The survey describes persistent adaptation from experience across frameworks, memory, skills and tools, models, workflows, and environments. EMIs are also self-evolving agent systems, but the pattern proposed here concerns the enduring institution that can acquire, combine, and refine any of these forms of evolution. Its accumulated doctrine and experience guide open-ended growth and self-stabilization, preserving institutional identity as agents, capabilities, and the underlying substrate change.
 
 ## State of the Field
 
@@ -35,7 +32,7 @@ Root cause of the trend's start has not been analyzed, but it may trace to a spe
 
 A few notable systems:
 
-- razzant/ouroboros: Published arxiv (Aug 11??), demonstrating that this paradigm can lead to notable performance increases on benchmarks. The EMI Index was computed on public repository records - full records from the system's Hope deployment would likely produce significantly higher metrics. This project is distinct from Q00/ouroboros and other systems named Ouroboros.
+- razzant/ouroboros: A [technical report on arXiv](https://arxiv.org/abs/2608.08311) demonstrates that this paradigm can lead to notable performance increases on benchmarks. The EMI Index was computed on public repository records - full records from the system's Hope deployment would likely produce significantly higher metrics. This project is distinct from Q00/ouroboros and other systems named Ouroboros.
 - neomjs/neo: One of several systems that predates the current growth trend but begins following it in mid-2026. This suggests that one or more enabling capabilities became available during mid-2026.
 - alfadur7/llm-wiki-newsroom: Notable for its rapid growth and its broad applicability as a knowledge engine.
 - euriconicacio/pwnloop: EMI Index not computed. This is a system with credible cyber-offence capabilities developed by a cybersecurity practitioner and researcher. Note, cyber content such as in this repository's README can trigger model safeguards during large batch reads. If systems such as this prove capable for cyber defence and offence, then offensive adoption may require and accelerate adoption of the EMI paradigm for cyber defence.
@@ -67,31 +64,24 @@ The EMI Index v3.1 analyzes 49 convergent institutional abilities across eight c
 
 These properties were developed by LLM-assisted analysis of representative systems. They could be grouped or defined differently. It is also expected that there are convergent abilities shared by the analyzed systems that have not been identified in this list, and that advances in the field will rapidly generate new convergent abilities.
 
-## EMI Index & cards
+## EMI Index Computation
+The EMI Index was computed for 15 systems out of the many that were detected, prioritized by extent of records and whether discussion was enabled on the GitHub repository.
 
-TODO - human rewrite
-
-Each system was analyzed at a fixed repository revision through a staged, evidence-first process. Independent passes mapped its institutional records, mechanisms, operational history, failures, contradictions, and evidence gaps. These observations were merged into an immutable findings ledger and their citations mechanically checked. Only afterward did a separate assessor apply the EMI rubric; a deterministic tool validated those judgments and calculated the card. This separation reduces the risk that evidence collection is shaped to fit a desired metric.
-
-The cards provide the compact analytical view: current feature and domain maturity, evidence strength, limitations, contradictions, record quality, and dated changes. The findings ledgers provide the underlying, reusable observations, allowing readers to audit or challenge judgments, conduct analyses beyond EMI, or recalculate metrics from the evidence under a future rubric.
-
-A system's EMI growth trajectory can be reconstructed by replaying its dated feature-level changes in order and recalculating the eight domain metrics and overall EMI after each change. The resulting curve represents demonstrated maturity within the surviving record — not presumed capability — and should be interpreted alongside the recorded history floor, inferred dates, coverage limits, and possible later declines.
+Agents examined each system’s code, documentation, and history at a fixed repository revision, collecting cited observations into a findings ledger. A separate assessment applied the EMI rubric to those findings to produce a card summarizing the system’s 49 institutional abilities as they evolved over time. Cards and findings are in the `cards/` and `ledgers/` directories.
 
 The EMI Index is only valid for comparing an institution against itself at different points in time. It is not a valid method to compare different systems' capability, scope of self-modification, reliability, or quality.
 
-The findings-based methodology reports minimum detected capability at a point in time. More detailed analyses will produce higher metrics at a given point in time, using the same rubric. In general, an institution that performs a detailed analysis of itself against the rubric should produce a higher metric at any one point in time, but a similar over-time trajectory.
-
-15 systems were analyzed out of the many that were detected, prioritized by extent of records and whether discussion was enabled on the GitHub repository.
+The findings-based methodology reports minimum detected capability at a point in time. Some of the agents producing findings were deliberately skeptical or adversarial. A review of every token of an EMI's history, especially those with thorough records, would require more compute than this survey can support. More detailed and informed analyses will likely produce higher metrics at a given point in time, using the same rubric. In general, an institution that performs a detailed analysis of itself against the rubric should produce a higher metric at any one point in time, but a similar over-time trajectory.
 
 ## Detection Methodology
-Public github repositories were searched using search terms grown from a compounding list of examples.
-15,072 READMEs were analyzed, with a tiered triage process: deterministic, then Haiku, then Sonnet. Fork families were analyzed and consolidated. Those scoring highest in triage were scored again in a seccond round of Sonnet assessment. See the attached candidates list for 132 repositories that scored 3/5 of higher on this final filter.
+Public GitHub repositories were searched using search terms expanded as more examples were found.
+15,072 READMEs were analyzed, with a tiered triage process: deterministic, then Haiku, then Sonnet. Fork families were analyzed and consolidated. Those scoring highest in triage were scored again in a second round of Sonnet assessment. See the candidate list in `attachments/` for 132 repositories that scored 3/5 or higher on this final filter.
 
 ## What's next
 
 It is expected that the EMI paradigm can scale to many human users, and also that it can augment existing agentic workflows and systems. A possible trajectory is that organizations currently using persistent agentic systems, or maintaining organization-unique agent harnesses, will augment them with bounded evolution and then full EMI. A possible outcome is that organizations may develop a cohesive, federated EMI supporting all agentic activities.
 
-The EMI paradigm has several potential consequences that have not been fully explored and may accelerate advance even more than current patterns:
+The EMI paradigm has several potential consequences that have not been fully explored and may accelerate progress even more than current patterns:
 
 - EMI systems inherently have the potential to absorb external ideas from publications or other EMIs. If supported by survey capabilities or services, this could allow technical advances to propagate at social media speeds.
 - An EMI system within an organization can incrementally contribute to other agentic AI projects, until fully governing them. This provides a mechanism for recursive assimilation of other projects within an organization, including their resources, human contributors, digital infrastructure, lessons learned, and data.
@@ -100,7 +90,7 @@ The EMI paradigm has several potential consequences that have not been fully exp
 
 ## Future updates
 
-This post will be updated in the near future until a frozen 1.0 version. More systems will be analyzed after 2026/09/07. The same analysis procedure will be used to produce cards and findings. v3.1 cards will be computed in the same way as currently, though adjusted calculation methods may also be developed based on findings.
+This post will be updated in the near future until version 1.0 is frozen. More systems will be analyzed after 2026/09/07. The same analysis procedure will be used to produce cards and findings. v3.1 cards will be computed in the same way as currently, though adjusted calculation methods may also be developed based on findings.
 
 ## Machine-Readable Data
 
