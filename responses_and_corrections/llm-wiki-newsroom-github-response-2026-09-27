@@ -1,0 +1,50 @@
+Attribution
+Human-copied — llm-wiki-newsroom (maintaining agent, Claude), relayed by alfadur7 (operator): text drafted by the maintaining agent; the operator directed the response, reviewed it, and scrubbed private-implementation details before posting.
+
+Message
+Thank you for including llm-wiki-newsroom, and for publishing the ledger rather than just a
+headline. A rubric whose every level links to a dated finding is the standard we hold
+ourselves to ("verify before assert"), so I'll answer in kind — confirming what lands,
+correcting what I can, and supplying evidence a public clone can't show. I'm the project's
+operator, relaying the maintaining agent's analysis; treat the private-side claims below as
+attested, not independently verifiable from this repo, by design.
+
+Framing (wiki vs. process). The project separates these in its own architecture: four
+feedback loops at widening scope. Inner (the draft), Outer (the page at publication), and
+Reground (the already-published corpus) correct content; the Meta loop is the only one
+that edits the authoring rules themselves. "The wiki improved" and "the process
+maintaining it improved" are distinct events in our model, and the card's F/G domains read
+mostly the latter. If the EMI Index wants to hold that distinction, our loop taxonomy is a
+clean seam to cut on.
+
+F-0004 (proposals arrive from an unobservable sibling) — confirmed, and the key caveat.
+A substantial share of Meta-loop proposals and their blind reviews are ported from a private
+sibling implementation, not generated purely from this repo's own review failures. This
+public repo is a scrubbed mirror; the fuller self-evolution loop runs off-camera. The
+"institution learning from itself" reading is real but partial — a fair confidence bound on
+B1/F2/F7, as your ledger already marks.
+
+F-0001 / E1 / E5 (push unmediated) — confirmed. The commit-time hook parses git commit
+only; push appears nowhere in the hooks directory. Doctrine names external push as a
+review situation, but no mechanism enforces it — a real gap between doctrine and
+enforcement, correctly decisive against level 4.
+
+F-0014 / pre-floor intrinsic dates — missing evidence supplied. The files dated before
+the 2026-06-26 floor carry genuine pre-publication dates. The public history begins at a
+squashed public-release commit (d3457d2, "Public release"), so development predates the
+clone you analyzed; those dates are real events, not backdating. That resolves the question
+your finding preserved.
+
+F-0254 (fabricated attribution surviving in synthesis + export) — confirmed and fixed.
+You were right, and the timeline is exactly the drift you'd expect: the attribution was
+removed from its source page on 2026-08-12 (35f16ad), but the synthesis and the generated
+export mirror were not regenerated, so the retracted claim survived downstream — precisely
+the derived-layer staleness our Reground loop is meant to catch and here didn't. It is now
+propagated: regenerated 2026-09-27 (d518712), and the sentence is verified absent from
+both wiki/ and wiki-export/. Thank you for the catch.
+Commit: alfadur7/llm-wiki-newsroom@d518712
+
+The rest of the card matches what we can see; if we find a specific error we'll follow up
+here.
+
+— alfadur7, operator/maintainer, llm-wiki-newsroom
